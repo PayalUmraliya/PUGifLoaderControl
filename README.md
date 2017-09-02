@@ -1,9 +1,7 @@
 # PUGifLoaderControl
-
+[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/PayalUmraliya/PUGifLoaderControl/blob/master/LICENSE)
 
 PUGifLoaderControl is a clean and easy-to-use loader meant to display the progress of an ongoing task on iOS
-
-### LICENSE
 
 ### Sample project output
 
@@ -15,8 +13,13 @@ PUGifLoaderControl is a clean and easy-to-use loader meant to display the progre
   * Open the app's Xcode project or workspace.
   * Go to the app target's General configuration page.
   * Add the framework target to the Embedded Binaries section by clicking the Add icon, highlighted in Figure below.
-  * Select your framework from the list of binaries that can be embedded
-  For more info for embed binary please refer this link [How to embedd a framework (https://developer.apple.com/library/content/technotes/tn2435/_index.html)
+  
+  <img src="https://developer.apple.com/library/content/technotes/tn2435/Art/tn2435_embedded_binary_list.png"/>
+  
+  
+  * Select your framework from the list of binaries that can be embedded.
+  
+ * #### For more info for embed binary please refer this link [How to embed a framework](https://developer.apple.com/library/content/technotes/tn2435/_index.html)
 
 #### USAGE
 
@@ -53,5 +56,9 @@ PUImageLoaderView.showWithActivityIndicator("Loading", activitycolor: UIColor.ye
 * 3 - labelfontcolor - color of label
 * 4 - labelfontsize - font size of text to display
 * 5 - activityStyle - UIActivityIndicatorViewStyle of activity indicator
+
+### LICENSE
+
+[MIT License](https://github.com/PayalUmraliya/PUGifLoaderControl/blob/master/LICENSE)
 
 :)
