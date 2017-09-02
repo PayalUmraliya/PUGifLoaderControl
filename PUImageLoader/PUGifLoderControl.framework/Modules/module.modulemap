@@ -1,0 +1,10 @@
+framework module PUGifLoderControl {
+  umbrella header "PUGifLoderControl.h"
+
+  export *
+  module * { export * }
+}
+
+module PUGifLoderControl.Swift {
+    header "PUGifLoderControl-Swift.h"
+}
