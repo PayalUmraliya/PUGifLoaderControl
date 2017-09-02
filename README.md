@@ -16,13 +16,11 @@ PUGifLoaderControl is a clean and easy-to-use loader meant to display the progre
   
   <img src="https://developer.apple.com/library/content/technotes/tn2435/Art/tn2435_embedded_binary_list.png"/>
   
-  
   * Select your framework from the list of binaries that can be embedded.
   
  * #### For more info for embed binary please refer this link [How to embed a framework](https://developer.apple.com/library/content/technotes/tn2435/_index.html)
 
 #### USAGE
-
 
 #### Showing the Loader
 
@@ -56,6 +54,12 @@ PUImageLoaderView.showWithActivityIndicator("Loading", activitycolor: UIColor.ye
 * 3 - labelfontcolor - color of label
 * 4 - labelfontsize - font size of text to display
 * 5 - activityStyle - UIActivityIndicatorViewStyle of activity indicator
+
+#### Hiding the Loader
+
+```
+PUImageLoaderView.hide()
+```
 
 ### LICENSE
 
