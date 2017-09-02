@@ -5,6 +5,8 @@ PUGifLoaderControl is a clean and easy-to-use loader meant to display the progre
 
 ### Sample project output
 
+<img src="https://github.com/PayalUmraliya/PUGifLoaderControl/blob/master/projectoutput.gif" width="240" height="500" />
+
 ### Installation Manually
 
 * Drag the **PUGifLoderControl/PUGifLoderControl.framework** folder into your project.
