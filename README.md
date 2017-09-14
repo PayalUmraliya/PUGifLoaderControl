@@ -38,7 +38,7 @@ import PUGifLoderControl
 
 You can show the status of indeterminate tasks using one of the following ( GIF Or Activity indicator):
 
-##### GIF Loader view - You can use any gif file.
+##### GIF Loader view - You can use any gif image according to your need.
 
 ```
 PUImageLoaderView.show("Loading", gifimagename: "foodloader")
