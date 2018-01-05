@@ -1,7 +1,7 @@
 # PUGifLoaderControl(Swift 3.0) - Framework
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/PayalUmraliya/PUGifLoaderControl/blob/master/LICENSE)
 
-PUGifLoaderControl(Swift) - framework is a clean and easy-to-use loader **framework** meant to display the progress of an ongoing task on iOS.
+PUGifLoaderControl(Swift) - framework is a clean and easy-to-use and light weight loader **framework** meant to display the progress of an ongoing task on iOS.
 
 ### Sample project output
 
