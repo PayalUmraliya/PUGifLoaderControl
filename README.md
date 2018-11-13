@@ -14,6 +14,7 @@ PUGifLoaderControl(Swift) - framework is a clean and easy-to-use and light weigh
 ### Use with Pod - Follow below link
 
 https://cocoapods.org/pods/PUGifLoading
+
 https://github.com/PayalUmraliya/PUGifLoading.git
 
 ### Explanation
