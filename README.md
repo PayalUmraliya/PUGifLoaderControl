@@ -26,9 +26,6 @@ PUGifLoaderControl(Swift) - framework is a clean and easy-to-use and light weigh
   
  * #### For more info for embed binary please refer this link [How to embed a framework](https://developer.apple.com/library/content/technotes/tn2435/_index.html)
 
-## Usage without using framework 
-## [How to use library without adding framework](https://github.com/PayalUmraliya/PUGifLoaderControlSource)
-
 #### USAGE
 
 #### Showing the Loader
