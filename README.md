@@ -11,6 +11,10 @@ PUGifLoaderControl(Swift) - framework is a clean and easy-to-use and light weigh
 
 * Very easy usage - just copy **PUGifLoderControl.framework** and **import** it wherever you need.
 
+### Use with Pod - Follow below link
+
+https://github.com/PayalUmraliya/PUGifLoading.git
+
 ### Explanation
 
 * Embed the **PUGifLoderControl/PUGifLoderControl.framework** folder into your project (Find and drag **PUGifLoderControl.framework** from the example project).
