@@ -71,11 +71,15 @@ loading.showWithActivityIndicator("Loading", activitycolor: UIColor.yellow, labe
 loading.hide()
 ```
 
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2021 TheKarma
+
 
 ## Author
 
-PayalUmraliya, behappy78600@gmail.com
+Payal Umraliya [behappy78600@gmail.com] 
 
-## License
-
-PUGifLoading is available under the MIT license. See the LICENSE file for more info.
+ツツツツツツ
