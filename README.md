@@ -24,6 +24,12 @@ it, simply add the following line to your Podfile:
 pod 'PUGifLoading'
 ```
 
+Using version specification
+
+```ruby
+pod 'PUGifLoading', :git => 'https://github.com/PayalUmraliya/PUGifLoaderControl.git', :branch => '1.0.2'
+```
+
 #### USAGE
 
 #### Showing the Loader
