@@ -1,36 +1,32 @@
-# PUGifLoaderControl(Swift 3.0) - Framework
-[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/PayalUmraliya/PUGifLoaderControl/blob/master/LICENSE)
+# PUGifLoading
 
-PUGifLoaderControl(Swift) - framework is a clean and easy-to-use and light weight loader **framework** meant to display the progress of an ongoing task on iOS.
+[![CI Status](https://img.shields.io/travis/PayalUmraliya/PUGifLoading.svg?style=flat)](https://travis-ci.org/PayalUmraliya/PUGifLoading)
+[![Version](https://img.shields.io/cocoapods/v/PUGifLoading.svg?style=flat)](https://cocoapods.org/pods/PUGifLoading)
+[![License](https://img.shields.io/cocoapods/l/PUGifLoading.svg?style=flat)](https://cocoapods.org/pods/PUGifLoading)
+[![Platform](https://img.shields.io/cocoapods/p/PUGifLoading.svg?style=flat)](https://cocoapods.org/pods/PUGifLoading)
 
-### Sample project output
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+### Example project output
 
 <img src="https://github.com/PayalUmraliya/PUGifLoaderControl/blob/master/projectoutput.gif" width="240" height="500" />
 
-### Use Manually
+## Requirements
 
-* Very easy usage - just copy **PUGifLoderControl.framework** and **import** it wherever you need.
+## Installation
 
-### Use with Pod - Follow below link
+PUGifLoading is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-https://cocoapods.org/pods/PUGifLoading
+```ruby
+pod 'PUGifLoading'
+```
 
-https://github.com/PayalUmraliya/PUGifLoading.git
+## Install Using Framework follow this link
 
-### Explanation
-
-* Embed the **PUGifLoderControl/PUGifLoderControl.framework** folder into your project (Find and drag **PUGifLoderControl.framework** from the example project).
-
-* #### How to Embed binary 
-  * Open the app's Xcode project or workspace.
-  * Go to the app target's General configuration page.
-  * Add the framework target to the Embedded Binaries section by clicking the Add icon, highlighted in Figure below.
-  
-  <img src="https://developer.apple.com/library/content/technotes/tn2435/Art/tn2435_embedded_binary_list.png"/>
-  
-  * Select your framework from the list of binaries that can be embedded.
-  
- * #### For more info for embed binary please refer this link [How to embed a framework](https://developer.apple.com/library/content/technotes/tn2435/_index.html)
+https://github.com/PayalUmraliya/PUGifLoaderControl.git
 
 #### USAGE
 
@@ -39,7 +35,13 @@ https://github.com/PayalUmraliya/PUGifLoading.git
 Import the control 
 
 ```
-import PUGifLoderControl
+import PUGifLoading
+```
+
+Create an object for this control
+
+```
+let loading = PUGIFLoading()
 ```
 
 You can show the status of indeterminate tasks using one of the following ( GIF Or Activity indicator):
@@ -47,7 +49,7 @@ You can show the status of indeterminate tasks using one of the following ( GIF 
 ##### GIF Loader view - You can use any gif image according to your need.
 
 ```
-PUImageLoaderView.show("Loading", gifimagename: "foodloader")
+loading.show("Loading", gifimagename: "foodloader")
 ```
 
 * ###### Above function take 2 parameters
@@ -57,7 +59,7 @@ PUImageLoaderView.show("Loading", gifimagename: "foodloader")
 ##### Activity indicator Loader view
 
 ```
-PUImageLoaderView.showWithActivityIndicator("Loading", activitycolor: UIColor.yellow, labelfontcolor:UIColor.yellow , labelfontsize: 16.0,activityStyle: UIActivityIndicatorViewStyle.whiteLarge)
+loading.showWithActivityIndicator("Loading", activitycolor: UIColor.yellow, labelfontcolor:UIColor.yellow , labelfontsize: 16.0,activityStyle: UIActivityIndicatorViewStyle.whiteLarge)
 ```
 
 * ###### Above function take 5 parameters
@@ -70,11 +72,14 @@ PUImageLoaderView.showWithActivityIndicator("Loading", activitycolor: UIColor.ye
 #### Hiding the Loader
 
 ```
-PUImageLoaderView.hide()
+loading.hide()
 ```
 
-### LICENSE
 
-[MIT License](https://github.com/PayalUmraliya/PUGifLoaderControl/blob/master/LICENSE)
+## Author
 
-:)
+PayalUmraliya, behappy78600@gmail.com
+
+## License
+
+PUGifLoading is available under the MIT license. See the LICENSE file for more info.

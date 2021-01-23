@@ -1,0 +1,6 @@
+framework module PUGifLoading {
+  umbrella header "PUGifLoading-umbrella.h"
+
+  export *
+  module * { export * }
+}

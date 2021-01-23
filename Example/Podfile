@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'PUGifLoading_Example' do
+  pod 'PUGifLoading', :path => '../'   
+  end
+end

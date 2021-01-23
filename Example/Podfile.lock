@@ -1,0 +1,16 @@
+PODS:
+  - PUGifLoading (0.1.0)
+
+DEPENDENCIES:
+  - PUGifLoading (from `../`)
+
+EXTERNAL SOURCES:
+  PUGifLoading:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PUGifLoading: b1f920a95feac4250485e02b325d6afce95b8fb0
+
+PODFILE CHECKSUM: 2f776157b207c5e9a614d13d27fffb5d79cd0fc3
+
+COCOAPODS: 1.5.3
