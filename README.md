@@ -24,10 +24,6 @@ it, simply add the following line to your Podfile:
 pod 'PUGifLoading'
 ```
 
-## Install Using Framework follow this link
-
-https://github.com/PayalUmraliya/PUGifLoaderControl.git
-
 #### USAGE
 
 #### Showing the Loader
