@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PUGifLoading'
-  s.version          = '0.1.3'
+  s.version          = '1.0.0'
   s.summary          = 'Clean and easy-to-use and light weight loader meant to display the progress of an ongoing task on iOS'
   s.swift_version = "4.2"
   s.description      = <<-DESC
@@ -27,10 +27,10 @@ Pod::Spec.new do |s|
 									:)
                        				DESC
 
-  s.homepage         = 'https://github.com/PayalUmraliya/PUGifLoading'
+  s.homepage         = 'https://github.com/PayalUmraliya/PUGifLoaderControl'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'PayalUmraliya' => 'behappy78600@gmail.com' }
-  s.source           = { :git => 'https://github.com/PayalUmraliya/PUGifLoading.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/PayalUmraliya/PUGifLoaderControl.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '8.0'
 
