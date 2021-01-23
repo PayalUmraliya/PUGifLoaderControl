@@ -2,7 +2,7 @@
 //  PUGifLoading.swift
 //  Pods
 //
-//  Created by Payal on 13/11/18.
+//  Created by Payal on 23/1/21.
 //
 
 import Foundation
@@ -36,72 +36,88 @@ public class PUGIFLoading
     public func show(_ loadingText : String?, gifimagename: String?)
     {
         hide()
-        let overlayvw = UIApplication.shared.keyWindow!
-        let overlay = UIView(frame: overlayvw.frame)
-        overlay.center = overlayvw.center
-        overlay.alpha = 0
-        overlay.backgroundColor = UIColor.black
-        overlayvw.addSubview(overlay)
-        overlayvw.bringSubviewToFront(overlay)
-        
-        let jeremyGif = UIImage.gifImageWithName(name: gifimagename!)
-        let imageView = UIImageView(image: jeremyGif)
-        imageView.frame = CGRect(x: 20.0, y: 50.0, width: 40, height: 40)
-        overlay.addSubview(imageView)
-        imageView.center = overlay.center;
-        
-        let label = UILabel()
-        if let textString = loadingText
+        if let keyWindow = UIWindow.key
         {
-            label.text = textString
-            label.textColor = Color_RGBA(214, 144, 5, 1)
-            label.font = FontWithSize("Verdana", 10)
-            label.sizeToFit()
-            label.center = CGPoint(x: imageView.center.x, y: imageView.center.y + 30)
-            overlay.addSubview(label)
+            let overlayvw = keyWindow
+            let overlay = UIView(frame: overlayvw.frame)
+            overlay.center = overlayvw.center
+            overlay.alpha = 0
+            overlay.backgroundColor = UIColor.black
+            overlayvw.addSubview(overlay)
+            overlayvw.bringSubviewToFront(overlay)
+            
+            let jeremyGif = UIImage.gifImageWithName(name: gifimagename!)
+            let imageView = UIImageView(image: jeremyGif)
+            imageView.frame = CGRect(x: 20.0, y: 50.0, width: 40, height: 40)
+            overlay.addSubview(imageView)
+            imageView.center = overlay.center;
+            
+            let label = UILabel()
+            if let textString = loadingText
+            {
+                label.text = textString
+                label.textColor = Color_RGBA(214, 144, 5, 1)
+                label.font = FontWithSize("Verdana", 10)
+                label.sizeToFit()
+                label.center = CGPoint(x: imageView.center.x, y: imageView.center.y + 30)
+                overlay.addSubview(label)
+            }
+            UIView.beginAnimations(nil, context: nil)
+            UIView.setAnimationDuration(0.5)
+            overlay.alpha = overlay.alpha > 0 ? 0 : 0.7
+            UIView.commitAnimations()
+            recentOverlay = overlay
+            recentOverlayTarget = overlayvw
+            recentLoadingText = loadingText
         }
-        UIView.beginAnimations(nil, context: nil)
-        UIView.setAnimationDuration(0.5)
-        overlay.alpha = overlay.alpha > 0 ? 0 : 0.7
-        UIView.commitAnimations()
-        recentOverlay = overlay
-        recentOverlayTarget = overlayvw
-        recentLoadingText = loadingText
     }
     public func showWithActivityIndicator(_ loadingText:String?, activitycolor: UIColor, labelfontcolor:UIColor , labelfontsize: Int,activityStyle: UIActivityIndicatorView.Style)
     {
         hide()
-        let overlayvw = UIApplication.shared.keyWindow!
-        let overlay = UIView(frame: overlayvw.frame)
-        overlay.center = overlayvw.center
-        overlay.alpha = 0
-        overlay.backgroundColor = UIColor.black
-        overlayvw.addSubview(overlay)
-        overlayvw.bringSubviewToFront(overlay)
-        
-        let indicator = UIActivityIndicatorView(style: activityStyle)
-        indicator.color = activitycolor
-        indicator.center = overlay.center
-        indicator.startAnimating()
-        overlay.addSubview(indicator)
-        
-        let label = UILabel()
-        if let textString = loadingText
+        if let keyWindow = UIWindow.key
         {
-            label.text = textString
-            label.textColor = labelfontcolor
-            label.font = FontWithSize("Verdana", labelfontsize)
-            label.sizeToFit()
-            label.center = CGPoint(x: indicator.center.x, y: indicator.center.y + 30)
-            overlay.addSubview(label)
+            let overlayvw = keyWindow
+                    let overlay = UIView(frame: overlayvw.frame)
+                    overlay.center = overlayvw.center
+                    overlay.alpha = 0
+                    overlay.backgroundColor = UIColor.black
+                    overlayvw.addSubview(overlay)
+                    overlayvw.bringSubviewToFront(overlay)
+                    
+                    let indicator = UIActivityIndicatorView(style: activityStyle)
+                    indicator.color = activitycolor
+                    indicator.center = overlay.center
+                    indicator.startAnimating()
+                    overlay.addSubview(indicator)
+                    
+                    let label = UILabel()
+                    if let textString = loadingText
+                    {
+                        label.text = textString
+                        label.textColor = labelfontcolor
+                        label.font = FontWithSize("Verdana", labelfontsize)
+                        label.sizeToFit()
+                        label.center = CGPoint(x: indicator.center.x, y: indicator.center.y + 30)
+                        overlay.addSubview(label)
+                    }
+                    UIView.beginAnimations(nil, context: nil)
+                    UIView.setAnimationDuration(0.5)
+                    overlay.alpha = overlay.alpha > 0 ? 0 : 0.7
+                    UIView.commitAnimations()
+                    recentOverlay = overlay
+                    recentOverlayTarget = overlayvw
+                    recentLoadingText = loadingText
+           
         }
-        UIView.beginAnimations(nil, context: nil)
-        UIView.setAnimationDuration(0.5)
-        overlay.alpha = overlay.alpha > 0 ? 0 : 0.7
-        UIView.commitAnimations()
-        recentOverlay = overlay
-        recentOverlayTarget = overlayvw
-        recentLoadingText = loadingText
+    }
+}
+extension UIWindow {
+    static var key: UIWindow? {
+        if #available(iOS 13, *) {
+            return UIApplication.shared.windows.first { $0.isKeyWindow }
+        } else {
+            return UIApplication.shared.keyWindow
+        }
     }
 }
 extension UIImage

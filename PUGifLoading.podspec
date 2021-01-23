@@ -8,14 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PUGifLoading'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Clean and easy-to-use and light weight loader meant to display the progress of an ongoing task on iOS'
   s.swift_version = "4.2"
   s.description      = <<-DESC
 									PUGifLoaderSource
 									PUGifLoader swift with source code
-									Alternative of https://github.com/PayalUmraliya/PUGifLoaderControl
-									If anybody have issue in framework import then they can use this source code instead of framework.
 									PUGifLoader is a clean and easy-to-use and light weight loader meant to display the progress of an ongoing task on iOS.
 									You can show the status of indeterminate tasks using one of the following ( GIF Or Activity indicator):
 									=== > GIF Loader view - You can use any gif image according to your need.
