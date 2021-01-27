@@ -63,7 +63,7 @@ loading.show("Loading", gifimagename: "foodloader",iWidth: 40,iHight: 40)
 * ###### Above function take 4 parameters
 * 1 - Text to display (you can pass blank for no text to display)
 * 2 - Name of gif image to show in loader
-* 3 - width for gif
+* 3 - Width for gif
 * 4 - Height for gif
 
 ##### Activity indicator Loader view
