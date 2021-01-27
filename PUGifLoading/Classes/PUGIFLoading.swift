@@ -33,7 +33,7 @@ public class PUGIFLoading
         }
     }
     
-    public func show(_ loadingText : String?, gifimagename: String?)
+    public func show(_ loadingText : String?, gifimagename: String?, iWidth:CGFloat,iHight:CGFloat)
     {
         hide()
         if let keyWindow = UIWindow.key
@@ -48,19 +48,21 @@ public class PUGIFLoading
             
             let jeremyGif = UIImage.gifImageWithName(name: gifimagename!)
             let imageView = UIImageView(image: jeremyGif)
-            imageView.frame = CGRect(x: 20.0, y: 50.0, width: 40, height: 40)
+            imageView.frame = CGRect(x: 20.0, y: 50.0, width: iWidth, height: iHight)
             overlay.addSubview(imageView)
             imageView.center = overlay.center;
-            
-            let label = UILabel()
-            if let textString = loadingText
+            if loadingText != ""
             {
-                label.text = textString
-                label.textColor = Color_RGBA(214, 144, 5, 1)
-                label.font = FontWithSize("Verdana", 10)
-                label.sizeToFit()
-                label.center = CGPoint(x: imageView.center.x, y: imageView.center.y + 30)
-                overlay.addSubview(label)
+                let label = UILabel()
+                if let textString = loadingText
+                {
+                    label.text = textString
+                    label.textColor = Color_RGBA(214, 144, 5, 1)
+                    label.font = FontWithSize("Verdana", 10)
+                    label.sizeToFit()
+                    label.center = CGPoint(x: imageView.center.x, y: imageView.center.y + 30)
+                    overlay.addSubview(label)
+                }
             }
             UIView.beginAnimations(nil, context: nil)
             UIView.setAnimationDuration(0.5)
@@ -89,16 +91,18 @@ public class PUGIFLoading
                     indicator.center = overlay.center
                     indicator.startAnimating()
                     overlay.addSubview(indicator)
-                    
-                    let label = UILabel()
-                    if let textString = loadingText
+                    if loadingText != ""
                     {
-                        label.text = textString
-                        label.textColor = labelfontcolor
-                        label.font = FontWithSize("Verdana", labelfontsize)
-                        label.sizeToFit()
-                        label.center = CGPoint(x: indicator.center.x, y: indicator.center.y + 30)
-                        overlay.addSubview(label)
+                            let label = UILabel()
+                            if let textString = loadingText
+                            {
+                                label.text = textString
+                                label.textColor = labelfontcolor
+                                label.font = FontWithSize("Verdana", labelfontsize)
+                                label.sizeToFit()
+                                label.center = CGPoint(x: indicator.center.x, y: indicator.center.y + 30)
+                                overlay.addSubview(label)
+                            }
                     }
                     UIView.beginAnimations(nil, context: nil)
                     UIView.setAnimationDuration(0.5)

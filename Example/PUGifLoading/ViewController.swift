@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     {
                 loading.hide()
               //PU : - ADD TEXT YOU WANT TO SHOW AND PROVIDE GIF IMAGE NAME HERE AND IT MUST BE AVAILABLE IN PROJECT CODE
-                loading.show("Loading", gifimagename: "foodloader")
+                loading.show("Loading", gifimagename: "foodloader",iWidth: 40,iHight: 40)
                 self.autohide()
         
     }
