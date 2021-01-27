@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PUGifLoading'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Clean and easy-to-use and light weight loader meant to display the progress of an ongoing task on iOS'
   s.swift_version = "4.2"
   s.description      = <<-DESC
