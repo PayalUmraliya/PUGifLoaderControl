@@ -54,9 +54,17 @@ You can show the status of indeterminate tasks using one of the following ( GIF 
 loading.show("Loading", gifimagename: "foodloader")
 ```
 
-* ###### Above function take 2 parameters
-* 1 - Text to display 
+###### Update 
+
+```
+loading.show("Loading", gifimagename: "foodloader",iWidth: 40,iHight: 40)
+```
+
+* ###### Above function take 4 parameters
+* 1 - Text to display (you can pass blank for no text to display)
 * 2 - Name of gif image to show in loader
+* 3 - width for gif
+* 4 - Height for gif
 
 ##### Activity indicator Loader view
 
